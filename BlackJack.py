@@ -3,7 +3,7 @@ import art
 import os
 
 def deal_card():
-    cards=[11,2,3,4,5,6,7,8,9,10,10,10,10]
+    cards=[2,3,4,5,6,7,8,9,10,10,10,10,11]
     card=random.choice(cards)
     return card
 
@@ -21,9 +21,9 @@ def compare(user_score, computer_score):
         return "You went over. You loss 😤"
     
     if user_score == computer_score:
-        return "Draw 🙃"
+        return "Draw"
     elif computer_score == 0:
-        return "Lose, apponent have blackjack 😱"
+        return "Lose, apponent have blackjack"
     elif user_score == 0:
         return "Win with Blackjack 😎"
     elif user_score > 21:
